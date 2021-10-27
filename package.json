@@ -1,0 +1,21 @@
+{
+    "name": "@EmperorKonstantin/tailwindcss-bug",
+    "description": "Tailwind CSS compiler bug",
+    "version": "1.0.0",
+    "author": "Konstantin Anthony Romanov",
+    "main": "tailwind.config.js",
+    "dependencies": {
+        "autoprefixer": "^10.2.5",
+        "postcss-import": "^12.0.1",
+        "postcss-nested": "^4.2.3",
+        "tailwindcss": "^2.1",
+        "terser": "^4.7.0"
+    },
+    "devDependencies": {
+        "postcss": "^8.2.4",
+        "postcss-cli": "^8.3.1"
+    },
+    "scripts": {
+        "prod": "NODE_ENV=production postcss tailwind-source.css -o tailwind-styles.css"
+    }
+}

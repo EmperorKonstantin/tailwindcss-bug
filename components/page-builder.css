@@ -1,0 +1,10 @@
+a,
+button,
+div {
+    &.pagebuilder-button-primary {
+        @apply btn;
+    }
+    &.pagebuilder-button-secondary {
+        @apply btn;
+    }
+}

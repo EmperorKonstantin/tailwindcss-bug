@@ -1,0 +1,7 @@
+@layer components {
+    .btn {
+        &:hover {
+            @apply bg-gray-600 shadow-md;
+        }
+    }
+}
