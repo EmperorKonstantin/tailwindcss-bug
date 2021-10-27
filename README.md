@@ -23,3 +23,18 @@ TypeError: Cannot read property 'filter' of undefined
     at /home/ant/dev/tailwind/node_modules/tailwindcss/lib/jit/processTailwindFeatures.js:64:50
     at /home/ant/dev/tailwind/node_modules/tailwindcss/lib/jit/index.js:25:56
 ```
+
+I found another class that causes the above error:
+
+Adding the following to .btn in button.css throws that TypeError as well:
+
+```css
+@layer components {
+    .btn {
+        &:active {
+             @apply ring ring-secondary ring-offset-2
+        }
+    }
+}
+
+```
